@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>TestNG:  Test Cucumber All Feature</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Cucumber All Feature</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 15 01:14:56 PDT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>130 seconds (130472 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerDashboardHRM.runScenario()'><b>runScenario</b><br>Test class: com.anhtester.runners.TestRunnerDashboardHRM<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open menu", "HRM dashboard page"</td>
+<td><div><pre>java.lang.AssertionError: ❌ The element is NOT visible. By.xpath: //span[normalize-space()=&apos;Home&apos;]
+	at com.anhtester.keywords.WebUI.verifyElementVisible(WebUI.java:2037)
+	at com.anhtester.projects.website.crm.stepdefinitions.DashboardSteps.userNavigateToDashboard(DashboardSteps.java:29)
+	at ✽.User navigate to dashboard(file:///C:/Users/hp/Desktop/AutomationFrameworkCucumberTestNG/src/test/resources/features/Dashboard.feature:8)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1834860344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1834860344'><pre>java.lang.AssertionError: ❌ The element is NOT visible. By.xpath: //span[normalize-space()=&apos;Home&apos;]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.anhtester.keywords.WebUI.verifyElementVisible(WebUI.java:2037)
+	at com.anhtester.projects.website.crm.stepdefinitions.DashboardSteps.userNavigateToDashboard(DashboardSteps.java:29)
+	at ✽.User navigate to dashboard(file:///C:/Users/hp/Desktop/AutomationFrameworkCucumberTestNG/src/test/resources/features/Dashboard.feature:8)
+</pre></div></td>
+<td>29</td>
+<td>com.anhtester.runners.TestRunnerDashboardHRM@4b2d44bc</td></tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerDashboardHRM.runScenario()'><b>runScenario</b><br>Test class: com.anhtester.runners.TestRunnerDashboardHRM<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open menu", "HRM dashboard page"</td>
+<td><div><pre>java.lang.AssertionError: ❌ The element is NOT visible. By.xpath: //span[normalize-space()=&apos;Home&apos;]
+	at com.anhtester.keywords.WebUI.verifyElementVisible(WebUI.java:2037)
+	at com.anhtester.projects.website.crm.stepdefinitions.DashboardSteps.userNavigateToDashboard(DashboardSteps.java:29)
+	at ✽.User navigate to dashboard(file:///C:/Users/hp/Desktop/AutomationFrameworkCucumberTestNG/src/test/resources/features/Dashboard.feature:8)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93210841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace93210841'><pre>java.lang.AssertionError: ❌ The element is NOT visible. By.xpath: //span[normalize-space()=&apos;Home&apos;]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.anhtester.keywords.WebUI.verifyElementVisible(WebUI.java:2037)
+	at com.anhtester.projects.website.crm.stepdefinitions.DashboardSteps.userNavigateToDashboard(DashboardSteps.java:29)
+	at ✽.User navigate to dashboard(file:///C:/Users/hp/Desktop/AutomationFrameworkCucumberTestNG/src/test/resources/features/Dashboard.feature:8)
+</pre></div></td>
+<td>28</td>
+<td>com.anhtester.runners.TestRunnerDashboardHRM@4b2d44bc</td></tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerSigninCRM.runScenario()'><b>runScenario</b><br>Test class: com.anhtester.runners.TestRunnerSigninCRM<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in CRM with an email invalid", "Sign in page CRM"</td>
+<td><div><pre>java.lang.AssertionError: The Dashboard page not display. expected [true] but found [false]
+	at com.anhtester.projects.website.crm.pages.SignIn.SignInPageCRM.verifySignInFail(SignInPageCRM.java:98)
+	at com.anhtester.projects.website.crm.stepdefinitions.LoginSteps.userLoginWithUsernameAndPasswordInvalid(LoginSteps.java:29)
+	at ✽.User login with username &quot;demo@example.com&quot; and password &quot;123456&quot; invalid(file:///C:/Users/hp/Desktop/AutomationFrameworkCucumberTestNG/src/test/resources/features/SigninCRM.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace458482094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace458482094'><pre>java.lang.AssertionError: The Dashboard page not display. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.anhtester.projects.website.crm.pages.SignIn.SignInPageCRM.verifySignInFail(SignInPageCRM.java:98)
+	at com.anhtester.projects.website.crm.stepdefinitions.LoginSteps.userLoginWithUsernameAndPasswordInvalid(LoginSteps.java:29)
+	at ✽.User login with username &quot;demo@example.com&quot; and password &quot;123456&quot; invalid(file:///C:/Users/hp/Desktop/AutomationFrameworkCucumberTestNG/src/test/resources/features/SigninCRM.feature:15)
+</pre></div></td>
+<td>12</td>
+<td>com.anhtester.runners.TestRunnerSigninCRM@6f9ad11c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerSigninCRM.runScenario()'><b>runScenario</b><br>Test class: com.anhtester.runners.TestRunnerSigninCRM<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in CRM with an email valid", "Sign in page CRM"</td>
+<td></td>
+<td>16</td>
+<td>com.anhtester.runners.TestRunnerSigninCRM@6f9ad11c</td></tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerLoginCMS.runScenario()'><b>runScenario</b><br>Test class: com.anhtester.runners.TestRunnerLoginCMS<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login success", "Login Test CMS"</td>
+<td></td>
+<td>19</td>
+<td>com.anhtester.runners.TestRunnerLoginCMS@6c03fb16</td></tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerDashboardHRM.scenarios()'><b>scenarios</b><br>Test class: com.anhtester.runners.TestRunnerDashboardHRM</td>
+<td></td>
+<td>0</td>
+<td>com.anhtester.runners.TestRunnerDashboardHRM@4b2d44bc</td></tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerSigninCRM.scenarios()'><b>scenarios</b><br>Test class: com.anhtester.runners.TestRunnerSigninCRM</td>
+<td></td>
+<td>0</td>
+<td>com.anhtester.runners.TestRunnerSigninCRM@6f9ad11c</td></tr>
+<tr>
+<td title='com.anhtester.runners.TestRunnerLoginCMS.scenarios()'><b>scenarios</b><br>Test class: com.anhtester.runners.TestRunnerLoginCMS</td>
+<td></td>
+<td>0</td>
+<td>com.anhtester.runners.TestRunnerLoginCMS@6c03fb16</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-15T06:19:51 PDT" name="Suite Cucumber" finished-at="2025-06-15T06:20:27 PDT" duration-ms="36707">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siddharthtest.runners.TestRunnerLoginCMS@4bb003e9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-06-15T06:19:51 PDT" name="Test Cucumber Login CMS" finished-at="2025-06-15T06:20:27 PDT" duration-ms="36707">
+      <class name="com.siddharthtest.runners.TestRunnerLoginCMS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.siddharthtest.runners.TestRunnerLoginCMS@4bb003e9]" started-at="2025-06-15T06:19:51 PDT" name="setUpClass" finished-at="2025-06-15T06:20:01 PDT" duration-ms="9775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@228ec493]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="scenarios()[pri:0, instance:com.siddharthtest.runners.TestRunnerLoginCMS@4bb003e9]" started-at="2025-06-15T06:20:01 PDT" name="scenarios" finished-at="2025-06-15T06:20:01 PDT" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenarios -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siddharthtest.runners.TestRunnerLoginCMS@4bb003e9]" started-at="2025-06-15T06:20:01 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-15T06:20:23 PDT" duration-ms="21516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login success"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Test CMS"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.siddharthtest.runners.TestRunnerLoginCMS@4bb003e9]" started-at="2025-06-15T06:20:23 PDT" name="tearDownClass" finished-at="2025-06-15T06:20:27 PDT" duration-ms="4632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.siddharthtest.runners.TestRunnerLoginCMS -->
+      <class name="com.siddharthtest.hooks.SuiteTearDown">
+        <test-method is-config="true" signature="sendSummaryReport()[pri:0, instance:com.siddharthtest.hooks.SuiteTearDown@6f9ad11c]" started-at="2025-06-15T06:20:27 PDT" name="sendSummaryReport" finished-at="2025-06-15T06:20:42 PDT" duration-ms="14279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendSummaryReport -->
+      </class> <!-- com.siddharthtest.hooks.SuiteTearDown -->
+    </test> <!-- Test Cucumber Login CMS -->
+  </suite> <!-- Suite Cucumber -->
+</testng-results>
