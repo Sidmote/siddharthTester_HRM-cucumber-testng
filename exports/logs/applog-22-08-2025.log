@@ -1,0 +1,81 @@
+[INFO] 22-08-2025 23:00:45 [main] [LogUtils] - ================ BEFORE ALL ================
+[INFO] 22-08-2025 23:00:45 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-08-2025 23:00:45 [main] [LogUtils] - {TARGET=local, extent.reporter.spark.prefix.device=@device_, DELETE_TEMP_FOLDER=no, TELEGRAM_CHATID=, OVERRIDE_REPORTS=yes, screenshot.rel.path=/exports/reports/CucumberExtentReports/images/, SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=CucumberExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, screenshot.dir=exports/reports/CucumberExtentReports/images/, TELEGRAM_TOKEN=, extent.reporter.spark.prefix.author=@author_, extent.reporter.spark.enable.device=true, EXTENT_REPORT_PDF=PdfReport.pdf, VIDEO_RECORD=no, PASSWORD=T+wyT5u9cOelDJbBWNgxLw, SCREENSHOT_ALL_STEPS=no, EXTENT_REPORT_NAME=CucumberExtentReports, extent.reporter.spark.start=true, EXPORT_VIDEO_PATH=exports/ExportData/Videos, EXPORT_CAPTURE_PATH=exports/ExportData/Images, WAIT_PAGE_LOADED=40, SCREENSHOT_PASSED_STEPS=no, EXTENT_REPORT_FOLDER=exports/reports/CucumberExtentReports, WAIT_EXPLICIT=10, BROWSER=chrome, REPORT_TITLE=Report | Automation Framework Cucumber TestNG | siddharth Tester, AUTHOR=siddharth Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=Automation Framework Cucumber TestNG | Siddharth Tester, extent.reporter.spark.out=exports/reports/CucumberExtentReports/CucumberExtentReports.html, extent.reporter.pdf.start=false, extent.reporter.excel.out=exports/reports/ExcelReport/ExtentExcel.xlsx, HEADLESS=false, REMOTE_URL=localhost, extent.reporter.spark.vieworder=dashboard,test,category,author,device,log,exception, extent.reporter.pdf.out=exports/reports/CucumberExtentReports/CucumberExtentPdfReport.pdf, SCREENSHOT_FAILED_STEPS=yes, SCREENSHOT_ALL_STEPS_DETAIL=no, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, extent.reporter.excel.start=false, extent.reporter.spark.enable.author=true, JSON_DATA_FILE_PATH=src/test/resources/testdata/JsonData.json, ACTIVE_PAGE_LOADED=true, URL_CRM=https://rise.anhtester.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, ZIP_FOLDER_PATH=exports/reports/CucumberExtentReports, extent.reporter.spark.base64imagesrc=true, LOCATE=en, ZIP_FOLDER=no}
+[INFO] 22-08-2025 23:00:46 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-08-2025 23:00:46 [main] [LogUtils] - {TARGET=local, extent.reporter.spark.prefix.device=@device_, DELETE_TEMP_FOLDER=no, TELEGRAM_CHATID=, OVERRIDE_REPORTS=yes, screenshot.rel.path=/exports/reports/CucumberExtentReports/images/, SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=CucumberExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, screenshot.dir=exports/reports/CucumberExtentReports/images/, TELEGRAM_TOKEN=, extent.reporter.spark.prefix.author=@author_, extent.reporter.spark.enable.device=true, EXTENT_REPORT_PDF=PdfReport.pdf, VIDEO_RECORD=no, PASSWORD=T+wyT5u9cOelDJbBWNgxLw, SCREENSHOT_ALL_STEPS=no, EXTENT_REPORT_NAME=CucumberExtentReports, extent.reporter.spark.start=true, EXPORT_VIDEO_PATH=exports/ExportData/Videos, EXPORT_CAPTURE_PATH=exports/ExportData/Images, WAIT_PAGE_LOADED=40, SCREENSHOT_PASSED_STEPS=no, EXTENT_REPORT_FOLDER=exports/reports/CucumberExtentReports, WAIT_EXPLICIT=10, BROWSER=chrome, REPORT_TITLE=Report | Automation Framework Cucumber TestNG | siddharth Tester, AUTHOR=siddharth Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=Automation Framework Cucumber TestNG | Siddharth Tester, extent.reporter.spark.out=exports/reports/CucumberExtentReports/CucumberExtentReports.html, extent.reporter.pdf.start=false, extent.reporter.excel.out=exports/reports/ExcelReport/ExtentExcel.xlsx, HEADLESS=false, REMOTE_URL=localhost, extent.reporter.spark.vieworder=dashboard,test,category,author,device,log,exception, extent.reporter.pdf.out=exports/reports/CucumberExtentReports/CucumberExtentPdfReport.pdf, SCREENSHOT_FAILED_STEPS=yes, SCREENSHOT_ALL_STEPS_DETAIL=no, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, extent.reporter.excel.start=false, extent.reporter.spark.enable.author=true, JSON_DATA_FILE_PATH=src/test/resources/testdata/JsonData.json, ACTIVE_PAGE_LOADED=true, URL_CRM=https://rise.anhtester.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, ZIP_FOLDER_PATH=exports/reports/CucumberExtentReports, extent.reporter.spark.base64imagesrc=true, LOCATE=en, ZIP_FOLDER=no}
+[INFO] 22-08-2025 23:01:12 [main] [LogUtils] - Running Scenario Name: Login success
+[INFO] 22-08-2025 23:01:18 [main] [LogUtils] - Open website with URL: https://cms.anhtester.com/login
+[INFO] 22-08-2025 23:01:19 [main] [LogUtils] - Set text admin@example.com on By.xpath: //input[@id='email']
+[INFO] 22-08-2025 23:01:20 [main] [LogUtils] - Set text 123456 on By.xpath: //input[@id='password']
+[INFO] 22-08-2025 23:01:25 [main] [LogUtils] - Clicked on the element By.xpath: //button[normalize-space()='Login']
+[INFO] 22-08-2025 23:01:26 [main] [LogUtils] - Get Current URL: https://cms.anhtester.com/admin
+[INFO] 22-08-2025 23:01:26 [main] [LogUtils] - Verify Contains: https://cms.anhtester.com/admin CONTAINS /admin
+[INFO] 22-08-2025 23:01:26 [main] [LogUtils] - Verify element present By.xpath: //span[normalize-space()='Products']
+[INFO] 22-08-2025 23:01:44 [main] [LogUtils] - ================ AFTER ALL ================
+[INFO] 22-08-2025 23:01:45 [main] [LogUtils] - Zipped C:\Users\hp\Desktop\siddharthTester_HRM-cucumber-testng\target\allure-results successfully !!
+[INFO] 22-08-2025 23:01:47 [main] [LogUtils] - ********* RUN STARTED *********
+[INFO] 22-08-2025 23:01:47 [main] [LogUtils] - ********* RUN FINISHED *********
+[INFO] 22-08-2025 23:01:51 [main] [LogUtils] - ================ BEFORE ALL ================
+[INFO] 22-08-2025 23:01:51 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-08-2025 23:01:51 [main] [LogUtils] - {TARGET=local, extent.reporter.spark.prefix.device=@device_, DELETE_TEMP_FOLDER=no, TELEGRAM_CHATID=, OVERRIDE_REPORTS=yes, screenshot.rel.path=/exports/reports/CucumberExtentReports/images/, SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=CucumberExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, screenshot.dir=exports/reports/CucumberExtentReports/images/, TELEGRAM_TOKEN=, extent.reporter.spark.prefix.author=@author_, extent.reporter.spark.enable.device=true, EXTENT_REPORT_PDF=PdfReport.pdf, VIDEO_RECORD=no, PASSWORD=T+wyT5u9cOelDJbBWNgxLw, SCREENSHOT_ALL_STEPS=no, EXTENT_REPORT_NAME=CucumberExtentReports, extent.reporter.spark.start=true, EXPORT_VIDEO_PATH=exports/ExportData/Videos, EXPORT_CAPTURE_PATH=exports/ExportData/Images, WAIT_PAGE_LOADED=40, SCREENSHOT_PASSED_STEPS=no, EXTENT_REPORT_FOLDER=exports/reports/CucumberExtentReports, WAIT_EXPLICIT=10, BROWSER=chrome, REPORT_TITLE=Report | Automation Framework Cucumber TestNG | siddharth Tester, AUTHOR=siddharth Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=Automation Framework Cucumber TestNG | Siddharth Tester, extent.reporter.spark.out=exports/reports/CucumberExtentReports/CucumberExtentReports.html, extent.reporter.pdf.start=false, extent.reporter.excel.out=exports/reports/ExcelReport/ExtentExcel.xlsx, HEADLESS=false, REMOTE_URL=localhost, extent.reporter.spark.vieworder=dashboard,test,category,author,device,log,exception, extent.reporter.pdf.out=exports/reports/CucumberExtentReports/CucumberExtentPdfReport.pdf, SCREENSHOT_FAILED_STEPS=yes, SCREENSHOT_ALL_STEPS_DETAIL=no, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, extent.reporter.excel.start=false, extent.reporter.spark.enable.author=true, JSON_DATA_FILE_PATH=src/test/resources/testdata/JsonData.json, ACTIVE_PAGE_LOADED=true, URL_CRM=https://rise.anhtester.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, ZIP_FOLDER_PATH=exports/reports/CucumberExtentReports, extent.reporter.spark.base64imagesrc=true, LOCATE=en, ZIP_FOLDER=no}
+[INFO] 22-08-2025 23:01:57 [main] [LogUtils] - Running Scenario Name: Sign in CRM with an email valid
+[INFO] 22-08-2025 23:02:00 [main] [LogUtils] - Open website with URL: https://rise.anhtester.com/signin
+[INFO] 22-08-2025 23:02:00 [main] [LogUtils] - Get Current URL: https://rise.anhtester.com/signin
+[INFO] 22-08-2025 23:02:00 [main] [LogUtils] - Verify Contains: https://rise.anhtester.com/signin CONTAINS /signin
+[INFO] 22-08-2025 23:02:01 [main] [LogUtils] - Get Page Title: Sign in | RISE CRM | Anh Tester Demo
+[INFO] 22-08-2025 23:02:01 [main] [LogUtils] - Verify Equals: Sign in | RISE CRM | Anh Tester Demo = Sign in | RISE CRM | Anh Tester Demo
+[INFO] 22-08-2025 23:02:04 [main] [LogUtils] - Clear and Fill admin@example.com on By.xpath: //input[@id='email']
+[INFO] 22-08-2025 23:02:05 [main] [LogUtils] - Clear and Fill 123456 on By.xpath: //input[@id='password']
+[INFO] 22-08-2025 23:02:09 [main] [LogUtils] - Clicked on the element By.xpath: //button[normalize-space()='Sign in']
+[INFO] 22-08-2025 23:02:10 [main] [LogUtils] - ✅ Element By.xpath: //span[normalize-space()='Dashboard'] existing.
+[INFO] 22-08-2025 23:02:10 [main] [LogUtils] - Get Current URL: https://rise.anhtester.com/dashboard/index/1
+[INFO] 22-08-2025 23:02:10 [main] [LogUtils] - Verify Contains: https://rise.anhtester.com/dashboard/index/1 CONTAINS /dashboard
+[INFO] 22-08-2025 23:02:30 [main] [LogUtils] - Running Scenario Name: Sign in CRM with an email invalid
+[INFO] 22-08-2025 23:02:38 [main] [LogUtils] - Open website with URL: https://rise.anhtester.com/signin
+[INFO] 22-08-2025 23:02:38 [main] [LogUtils] - Get Current URL: https://rise.anhtester.com/signin
+[INFO] 22-08-2025 23:02:38 [main] [LogUtils] - Verify Contains: https://rise.anhtester.com/signin CONTAINS /signin
+[INFO] 22-08-2025 23:02:38 [main] [LogUtils] - Get Page Title: Sign in | RISE CRM | Anh Tester Demo
+[INFO] 22-08-2025 23:02:38 [main] [LogUtils] - Verify Equals: Sign in | RISE CRM | Anh Tester Demo = Sign in | RISE CRM | Anh Tester Demo
+[INFO] 22-08-2025 23:02:39 [main] [LogUtils] - Clear and Fill demo@example.com on By.xpath: //input[@id='email']
+[INFO] 22-08-2025 23:02:41 [main] [LogUtils] - Clear and Fill 123456 on By.xpath: //input[@id='password']
+[INFO] 22-08-2025 23:02:44 [main] [LogUtils] - Clicked on the element By.xpath: //button[normalize-space()='Sign in']
+[ERROR] 22-08-2025 23:02:44 [main] [LogUtils] - ❌ Element By.xpath: //div[@role='alert'] NOT exists.
+[INFO] 22-08-2025 23:02:51 [main] [LogUtils] - ================ AFTER ALL ================
+[INFO] 22-08-2025 23:02:52 [main] [LogUtils] - Zipped C:\Users\hp\Desktop\siddharthTester_HRM-cucumber-testng\target\allure-results successfully !!
+[INFO] 22-08-2025 23:02:54 [main] [LogUtils] - ********* RUN STARTED *********
+[INFO] 22-08-2025 23:02:54 [main] [LogUtils] - ********* RUN FINISHED *********
+[INFO] 22-08-2025 23:02:54 [main] [LogUtils] - ================ BEFORE ALL ================
+[INFO] 22-08-2025 23:02:54 [main] [LogUtils] - Loaded all properties files.
+[INFO] 22-08-2025 23:02:54 [main] [LogUtils] - {TARGET=local, extent.reporter.spark.prefix.device=@device_, DELETE_TEMP_FOLDER=no, TELEGRAM_CHATID=, OVERRIDE_REPORTS=yes, screenshot.rel.path=/exports/reports/CucumberExtentReports/images/, SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=CucumberExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, screenshot.dir=exports/reports/CucumberExtentReports/images/, TELEGRAM_TOKEN=, extent.reporter.spark.prefix.author=@author_, extent.reporter.spark.enable.device=true, EXTENT_REPORT_PDF=PdfReport.pdf, VIDEO_RECORD=no, PASSWORD=T+wyT5u9cOelDJbBWNgxLw, SCREENSHOT_ALL_STEPS=no, EXTENT_REPORT_NAME=CucumberExtentReports, extent.reporter.spark.start=true, EXPORT_VIDEO_PATH=exports/ExportData/Videos, EXPORT_CAPTURE_PATH=exports/ExportData/Images, WAIT_PAGE_LOADED=40, SCREENSHOT_PASSED_STEPS=no, EXTENT_REPORT_FOLDER=exports/reports/CucumberExtentReports, WAIT_EXPLICIT=10, BROWSER=chrome, REPORT_TITLE=Report | Automation Framework Cucumber TestNG | siddharth Tester, AUTHOR=siddharth Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=Automation Framework Cucumber TestNG | Siddharth Tester, extent.reporter.spark.out=exports/reports/CucumberExtentReports/CucumberExtentReports.html, extent.reporter.pdf.start=false, extent.reporter.excel.out=exports/reports/ExcelReport/ExtentExcel.xlsx, HEADLESS=false, REMOTE_URL=localhost, extent.reporter.spark.vieworder=dashboard,test,category,author,device,log,exception, extent.reporter.pdf.out=exports/reports/CucumberExtentReports/CucumberExtentPdfReport.pdf, SCREENSHOT_FAILED_STEPS=yes, SCREENSHOT_ALL_STEPS_DETAIL=no, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, extent.reporter.excel.start=false, extent.reporter.spark.enable.author=true, JSON_DATA_FILE_PATH=src/test/resources/testdata/JsonData.json, ACTIVE_PAGE_LOADED=true, URL_CRM=https://rise.anhtester.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, ZIP_FOLDER_PATH=exports/reports/CucumberExtentReports, extent.reporter.spark.base64imagesrc=true, LOCATE=en, ZIP_FOLDER=no}
+[INFO] 22-08-2025 23:02:59 [main] [LogUtils] - Running Scenario Name: Open menu
+[INFO] 22-08-2025 23:03:02 [main] [LogUtils] - Open website with URL: https://hrm.anhtester.com/
+[INFO] 22-08-2025 23:03:03 [main] [LogUtils] - Set text admin_example on By.xpath: //input[@id='iusername']
+[INFO] 22-08-2025 23:03:03 [main] [LogUtils] - Scenario in ScenarioManager: io.cucumber.java.Scenario@4fd43b14
+[INFO] 22-08-2025 23:03:05 [main] [LogUtils] - Set text 123456 on By.xpath: //input[@id='ipassword']
+[INFO] 22-08-2025 23:03:05 [main] [LogUtils] - Clicked on the element By.xpath: //button[@type='submit']
+[INFO] 22-08-2025 23:03:06 [main] [LogUtils] - Verify element visible By.xpath: //span[normalize-space()='Home']
+[INFO] 22-08-2025 23:03:17 [main] [LogUtils] - Clicked on the element By.xpath: //span[contains(text(),'Projects')]
+[INFO] 22-08-2025 23:03:19 [main] [LogUtils] - Verify text of an element [Contains]: true
+[INFO] 22-08-2025 23:03:37 [main] [LogUtils] - Running Scenario Name: Open menu
+[INFO] 22-08-2025 23:03:40 [main] [LogUtils] - Open website with URL: https://hrm.anhtester.com/
+[INFO] 22-08-2025 23:03:41 [main] [LogUtils] - Set text admin_example on By.xpath: //input[@id='iusername']
+[INFO] 22-08-2025 23:03:41 [main] [LogUtils] - Scenario in ScenarioManager: io.cucumber.java.Scenario@2aea50a6
+[INFO] 22-08-2025 23:03:42 [main] [LogUtils] - Set text 123456 on By.xpath: //input[@id='ipassword']
+[INFO] 22-08-2025 23:03:42 [main] [LogUtils] - Clicked on the element By.xpath: //button[@type='submit']
+[INFO] 22-08-2025 23:03:43 [main] [LogUtils] - Verify element visible By.xpath: //span[normalize-space()='Home']
+[INFO] 22-08-2025 23:03:53 [main] [LogUtils] - Clicked on the element By.xpath: //span[contains(text(),'Tasks')]
+[INFO] 22-08-2025 23:03:55 [main] [LogUtils] - Verify text of an element [Contains]: true
+[INFO] 22-08-2025 23:04:03 [main] [LogUtils] - ================ AFTER ALL ================
+[INFO] 22-08-2025 23:04:03 [main] [LogUtils] - Zipped C:\Users\hp\Desktop\siddharthTester_HRM-cucumber-testng\target\allure-results successfully !!
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - ********* RUN STARTED *********
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - ********* RUN FINISHED *********
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - =============== AFTER SUITE ===============
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - ****************************************
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - Send Email - START
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - ****************************************
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - File name: C:\Users\hp\Desktop\siddharthTester_HRM-cucumber-testng\exports/reports/CucumberExtentReports\CucumberExtentReports.html
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - count_totalTCs: 5
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - count_passedTCs: 4
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - count_failedTCs: 1
+[INFO] 22-08-2025 23:04:05 [main] [LogUtils] - count_skippedTCs: 0
+[INFO] 22-08-2025 23:04:19 [main] [LogUtils] - Summary mail dispatched once after entire suite.

@@ -102,9 +102,9 @@ public final class FrameworkConstants {
     public static final String ICON_BUG = "<i class='fa fa-bug' ></i>";
     /* style="text-align:center;" */
 
-    public static final String ICON_SOCIAL_GITHUB_PAGE_URL = "https://anhtester.com/";
-    public static final String ICON_SOCIAL_LINKEDIN_URL = "https://www.linkedin.com/in/anhtester/";
-    public static final String ICON_SOCIAL_GITHUB_URL = "https://github.com/anhtester";
+    public static final String ICON_SOCIAL_GITHUB_PAGE_URL = "";
+    public static final String ICON_SOCIAL_LINKEDIN_URL = "";
+    public static final String ICON_SOCIAL_GITHUB_URL = "https://github.com/Sidmote";
     public static final String ICON_SOCIAL_LINKEDIN = "<a href='" + ICON_SOCIAL_LINKEDIN_URL
             + "'><i class='fa fa-linkedin-square' style='font-size:24px'></i></a>";
     public static final String ICON_SOCIAL_GITHUB = "<a href='" + ICON_SOCIAL_GITHUB_URL

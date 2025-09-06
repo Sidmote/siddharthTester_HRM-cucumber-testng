@@ -5,12 +5,11 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-@Test
+//@Test
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/featureFiles",
         glue = {
-                "com.siddharthtest.projects.orange.HRM.stepdefinitions",
-                "com.siddharthtest.projects.orange.HRM1.stepdefinitions",
+                "com.siddharthtest.stepDefinitions",
                 "com.siddharthtest.hooks"
         },
         plugin = {
@@ -22,12 +21,13 @@ import org.testng.annotations.Test;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,
-        tags = "@Regression or @Smoke"
+        tags ="@Regression or @Smoke"
+//        "@Regression or @Smoke"
 )
 
 public class TestRunnerAllFeatureByTag extends AbstractTestNGCucumberTests {
     @Override
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }

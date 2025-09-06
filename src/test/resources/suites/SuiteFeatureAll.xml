@@ -4,9 +4,23 @@
     <test name="Test Cucumber All Feature">
         <parameter name="BROWSER" value="chrome"/>
         <classes>
-            <class name="com.siddharthtest.runners.TestRunnerLoginCMS"/>
-            <class name="com.siddharthtest.runners.TestRunnerSigninCRM"/>
-            <class name="com.siddharthtest.runners.TestRunnerDashboardHRM"/>
+            <class name="com.siddharthtest.runners.TestRunnerCheckRequiredElements"/>
+            <class name="com.siddharthtest.runners.TestRunnerCreateUser"/>
+            <class name="com.siddharthtest.runners.TestRunnerCreateUserbyMandatoryfields"/>
+            <class name="com.siddharthtest.runners.TestRunnerDashboard"/>
+            <class name="com.siddharthtest.runners.TestRunnerLeave"/>
+            <class name="com.siddharthtest.runners.TestRunnerMyInfo"/>
+            <class name="com.siddharthtest.runners.TestRunnerPerformance"/>
+            <class name="com.siddharthtest.runners.TestRunnerPIM"/>
+            <class name="com.siddharthtest.runners.TestRunnerRecruitment"/>
+            <class name="com.siddharthtest.runners.TestRunnerRegistryAttempt"/>
+            <class name="com.siddharthtest.runners.TestRunnerSavingMandatoryFieldsWithoutFilling"/>
+            <class name="com.siddharthtest.runners.TestRunnerUsernotification"/>
+            <class name="com.siddharthtest.runners.TestRunnerValidateUserHeading"/>
+            <class name="com.siddharthtest.runners.TestRunnerVarifyPassword"/>
+            <class name="com.siddharthtest.runners.TestRunnerVerifyingPresenceofaddbutton"/>
+            <class name="com.siddharthtest.runners.TestRunnerVerifyInvalidUsername"/>
+            <class name="com.siddharthtest.runners.TestRunnerVerifyPasswordCases"/>
             
             
             <!-- The one‑time after‑suite logic -->

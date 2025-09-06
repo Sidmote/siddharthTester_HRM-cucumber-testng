@@ -5,27 +5,26 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-@Test
+//@Test
 @CucumberOptions(
-        features = "src/test/resources/features/SigninCRM.feature",
+        features = "src/test/resources/featureFiles/VarifyPassword.feature",
         glue = {
-        		"com.siddharthtest.projects.orange.HRM.stepdefinitions",
-                "com.siddharthtest.projects.orange.HRM1.stepdefinitions",
+                "com.siddharthtest.stepDefinitions",
                 "com.siddharthtest.hooks"
         },
         plugin = {
                 "com.siddharthtest.hooks.CucumberListener",
                 "pretty",
-                "html:target/cucumber-reports/TestRunnerSigninCRM.html",
-                "json:target/cucumber-reports/TestRunnerSigninCRM.json",
+                "html:target/cucumber-reports/TestRunnerVarifyPassword.html",
+                "json:target/cucumber-reports/TestRunnerVarifyPassword.json",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,
-        tags = "@regression or @smoke"
+        tags = "@VarifyPassword"
 )
 
-public class TestRunnerSigninCRM extends AbstractTestNGCucumberTests {
+public class TestRunnerVarifyPassword extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = false)
     public Object[][] scenarios() {

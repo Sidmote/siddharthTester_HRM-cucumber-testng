@@ -5,27 +5,26 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-@Test
+//@Test
 @CucumberOptions(
-        features = "src/test/resources/features/LoginCMS.feature",
+        features = "src/test/resources/featureFiles/VerifyingPresenceofaddbutton.feature",
         glue = {
-        		"com.siddharthtest.projects.orange.HRM.stepdefinitions",
-                "com.siddharthtest.projects.orange.HRM1.stepdefinitions",
+                "com.siddharthtest.stepDefinitions",
                 "com.siddharthtest.hooks"
         },
         plugin = {
                 "com.siddharthtest.hooks.CucumberListener",
                 "pretty",
-                "html:target/cucumber-reports/TestRunnerLoginCMS.html",
-                "json:target/cucumber-reports/TestRunnerLoginCMS.json",
+                "html:target/cucumber-reports/TestRunnerVerifyingPresenceofaddbutton.html",
+                "json:target/cucumber-reports/TestRunnerVerifyingPresenceofaddbutton.json",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,
-        tags = "@regression"
+        tags = "@VerifyingPresenceofaddbutton"
 )
 
-public class TestRunnerLoginCMS extends AbstractTestNGCucumberTests {
+public class TestRunnerVerifyingPresenceofaddbutton extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = false)
     public Object[][] scenarios() {

@@ -77,6 +77,40 @@ public class WebUI {
             sleep(FrameworkConstants.WAIT_SLEEP_STEP);
         }
     }
+    
+
+        private static WebDriver driver;
+
+        // Initialize driver (already in your project – keep your existing one)
+        public static void setDriver(WebDriver webDriver) {
+            driver = webDriver;
+        }
+
+        public static WebDriver getDriver() {
+            return driver;
+        }
+
+        public static WebElement findElement(By locator) {
+            return driver.findElement(locator);
+        }
+
+        public static void click(By locator) {
+            findElement(locator).click();
+        }
+
+        // ✅ New helper for AutoComplete selection
+        public static void pickFromAutoComplete(By locator, String name) {
+            setText(locator, name);
+
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
+            WebElement suggestion = wait.until(ExpectedConditions
+                    .visibilityOfElementLocated(By.xpath("//div[@role='listbox']//span[contains(text(),'" + name + "')]")));
+
+            suggestion.click();
+        }
+ 
+
+    
 
     /**
      * Take entire-page screenshot and add to Extent reports and Allure reports
@@ -1285,7 +1319,7 @@ public class WebUI {
      * @return true/false
      */
     @Step("Check element exist {0}")
-    public static boolean checkElementExist(By by) {
+    public static boolean checkElementExists(By by) {
         boolean result = false;
 
         List<WebElement> elementList = getWebElements(by);

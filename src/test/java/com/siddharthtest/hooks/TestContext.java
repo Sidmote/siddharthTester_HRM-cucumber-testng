@@ -2,8 +2,6 @@ package com.siddharthtest.hooks;
 
 import com.siddharthtest.driver.DriverManager;
 import com.siddharthtest.driver.TargetFactory;
-import com.siddharthtest.projects.orange.HRM.pages.CommonPageCMS;
-import com.siddharthtest.projects.orange.HRM.pages.LoginPage;
 import com.siddharthtest.utils.LogUtils;
 
 import org.openqa.selenium.WebDriver;
@@ -19,22 +17,22 @@ public class TestContext {
         DriverManager.setDriver(driver);
     }
 
-    private LoginPage loginPage;
-    private CommonPageCMS commonPageCMS;
-
-    public LoginPage getLoginPage() {
-        if (loginPage == null) {
-            loginPage = new LoginPage();
-        }
-        return loginPage;
-    }
-
-    public CommonPageCMS getCommonPage() {
-        if (commonPageCMS == null) {
-            commonPageCMS = new CommonPageCMS();
-        }
-        return commonPageCMS;
-    }
+//    private LoginPage loginPage;
+//    private CommonPageCMS commonPageCMS;
+//
+//    public LoginPage getLoginPage() {
+//        if (loginPage == null) {
+//            loginPage = new LoginPage();
+//        }
+//        return loginPage;
+//    }
+//
+//    public CommonPageCMS getCommonPage() {
+//        if (commonPageCMS == null) {
+//            commonPageCMS = new CommonPageCMS();
+//        }
+//        return commonPageCMS;
+//    }
 
     public WebDriver getDriver() {
         return DriverManager.getDriver();

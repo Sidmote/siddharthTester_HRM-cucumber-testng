@@ -53,12 +53,12 @@
         <mysql-connector-j.version>9.3.0</mysql-connector-j.version>
 
         <!-- Suite XML path -->
-        <suite.feature>src/test/resources/suites/SuiteFeatureByTag.xml</suite.feature>
-        <suite.feature.login.cms>src/test/resources/suites/SuiteFeatureLoginCMS.xml</suite.feature.login.cms>
+        <!--<suite.feature>src/test/resources/suites/SuiteFeatureByPIM.xml</suite.feature>-->
+       <suite.feature.Dashboard>src/test/resources/suites/SuiteFeatureDashboard.xml</suite.feature.Dashboard>
+    
     </properties>
 
     <dependencies>
-
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -334,7 +334,7 @@
                         <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>${suite.feature.login.cms}</suiteXmlFile>
+                                <suiteXmlFile>${suite.feature.Dashboard}</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -365,7 +365,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- Call Suite name global set up above -->
-                        <suiteXmlFile>${suite.feature.login.cms}</suiteXmlFile>
+                        <suiteXmlFile>${suite.feature.Dashboard}</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>

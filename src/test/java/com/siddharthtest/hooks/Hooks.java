@@ -13,6 +13,7 @@ import com.siddharthtest.reports.AllureManager;
 import com.siddharthtest.utils.LogUtils;
 import com.siddharthtest.utils.ReportUtils;
 import com.siddharthtest.utils.ZipUtils;
+import com.siddharthtest.utilities.GWD;
 
 import io.cucumber.java.*;
 import io.qameta.allure.Allure;
@@ -26,11 +27,11 @@ import static com.siddharthtest.keywords.WebUI.sleep;
 
 public class Hooks {
 
-    TestContext testContext;
-
-    public Hooks(TestContext context) {
-        testContext = context;
-    }
+//    TestContext testContext;
+//
+//    public Hooks(TestContext context) {
+//        testContext = context;
+//    }
 
     @BeforeAll
     public static void before_all() {
@@ -63,16 +64,18 @@ public class Hooks {
         ZipUtils.zipFolder(SystemHelpers.getCurrentDir() + "target" + File.separator + "allure-results", "allure-results");
 
         sleep(2);
+        
+        //Enable 69-77 when email want to send
 
-//        EmailManager.sendEmail(count_totalTCs
-//                , count_passedTCs
-//                , count_failedTCs
-//                , count_skippedTCs);
-//
-//        LogUtils.info("count_totalTCs: " + count_totalTCs);
-//        LogUtils.info("count_passedTCs: " + count_passedTCs);
-//        LogUtils.info("count_failedTCs: " + count_failedTCs);
-//        LogUtils.info("count_skippedTCs: " + count_skippedTCs);
+        EmailManager.sendEmail(count_totalTCs
+                , count_passedTCs
+                , count_failedTCs
+                , count_skippedTCs);
+
+        LogUtils.info("count_totalTCs: " + count_totalTCs);
+        LogUtils.info("count_passedTCs: " + count_passedTCs);
+        LogUtils.info("count_failedTCs: " + count_failedTCs);
+        LogUtils.info("count_skippedTCs: " + count_skippedTCs);
     }
 
     @Before
@@ -110,23 +113,23 @@ public class Hooks {
         }
 
         //Quit driver in thread local
-        DriverManager.quit();
+        GWD.quit();
         WebUI.stopSoftAssertAll();
     }
 
     @AfterStep
     public void afterStep(Scenario scenario) {
         if (scenario.getStatus().equals(Status.PASSED) && SCREENSHOT_PASSED_STEPS.equals(YES)) {
-            WebUI.waitForPageLoaded();
-            CaptureHelpers.takeScreenshotScenario(scenario,"Screenshot passed step");
+            GWD.waitForPageLoaded();
+            GWD.takeScreenshotScenario(scenario,"Screenshot passed step");
         }
         if (scenario.getStatus().equals(Status.FAILED) && SCREENSHOT_FAILED_STEPS.equals(YES)) {
-            WebUI.waitForPageLoaded();
-            CaptureHelpers.takeScreenshotScenario(scenario,"Screenshot failed step");
+            GWD.waitForPageLoaded();
+            GWD.takeScreenshotScenario(scenario,"Screenshot failed step");
         }
         if (SCREENSHOT_ALL_STEPS.equals(YES)) {
-            WebUI.waitForPageLoaded();
-            CaptureHelpers.takeScreenshotScenario(scenario,"Screenshot step");
+            GWD.waitForPageLoaded();
+            GWD.takeScreenshotScenario(scenario,"Screenshot step");
         }
     }
 

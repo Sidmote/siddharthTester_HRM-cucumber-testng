@@ -22,9 +22,9 @@ public class EmailConfig {
     public static final String PORT = "587";
 
     public static final String FROM = "siddharthmote123@gmail.com";
-    public static final String PASSWORD = "yvgt otuy ncao whyb";
+    public static final String PASSWORD = "nbxq zgec wjzk hnqg";
 
-    public static final String[] TO = {"siddharthmote123@gmail.com"};
+    public static final String[] TO = {"siddharthmote123@gmail.com","malusarenikita17@gmail.com"};
     public static final String SUBJECT = FrameworkConstants.REPORT_TITLE;
     
 //    ,"malusarenikita17@gmail.com" //add email i row 27

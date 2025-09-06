@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 15, 2025 06:19:53 AM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 6, 2025 04:58:29 AM</span></a>
 </li>
 </ul>
 </div>
@@ -57,16 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('author-view')">
-<a id="nav-author" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-user"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('device-view')">
-<a id="nav-device" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tablet"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -76,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 15, 2025 06:19:53 AM</h3>
+<h3>Sep 6, 2025 04:58:29 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 15, 2025 06:20:25 AM</h3>
+<h3>Sep 6, 2025 04:59:20 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -172,53 +162,33 @@
 </div></div>
 <script>
 var timeline = {
-"Login Test CMS":19.42
+"Dashboard Verification":32.972
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 author-container">
-<div class="card">
-<div class="card-header"><p>Author</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
-<tbody>
-<tr>
-<td>AnhTester</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 <div class="col-lg-6 col-md-12 category-container">
 <div class="card">
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@regression</td>
+<td>@Dashboard</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
-</tbody>
-</table></div>
-</div>
-</div>
-<div class="col-lg-6 col-md-12 device-container">
-<div class="card">
-<div class="card-header"><p>Device</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
-<tbody>
 <tr>
-<td>Window_11</td>
+<td>@Smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -268,21 +238,9 @@ eventsCount: 5,
 </ul>
 </li>
 <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
-<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">AnhTester</a>
-</ul>
-</li>
-<li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@regression</a>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
-<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Window_11</a>
+<a class="dropdown-item" href="#">@Dashboard</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a>
 </ul>
 </li>
 </ul>
@@ -293,9 +251,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login Test CMS</p>
+            <p class="name">Dashboard Verification</p>
             <p class="text-sm">
-              <span>6:20:03 AM</span> / <span>00:00:19:420</span>
+              <span>4:58:44 AM</span> / <span>00:00:32:972</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -303,10 +261,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login Test CMS</h5>
-<span class='badge badge-success'>06.15.2025 6:20:03 AM</span>
-<span class='badge badge-danger'>06.15.2025 6:20:23 AM</span>
-<span class='badge badge-default'>00:00:19:420</span>
+<h5 class="test-status text-pass">Dashboard Verification</h5>
+<span class='badge badge-success'>09.06.2025 4:58:44 AM</span>
+<span class='badge badge-danger'>09.06.2025 4:59:17 AM</span>
+<span class='badge badge-default'>00:00:32:972</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -319,28 +277,28 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login success</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify dashboard page</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="com.siddharthtest.projects.orange.HRM.stepdefinitions.LoginSteps.userNavigateToLoginPageForAdmin(java.lang.String)">
-                <span>Given User navigate to Login Page for Admin "https://cms.anhtester.com/login"</span>
+              <div class="step pass-bg" title="com.siddharthtest.stepDefinitions.CreateUser_StepDefinitions.navigateToTheWebsite()">
+                <span>Given Navigate to the Website</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.siddharthtest.projects.orange.HRM.stepdefinitions.LoginSteps.userEnterEmailPasswordAndClickLoginButton(java.lang.String,java.lang.String)">
-                <span>When user enter email "admin@example.com" password "123456"</span>
+              <div class="step pass-bg" title="com.siddharthtest.stepDefinitions.CreateUserbyMandatoryfields_StepDefinitions.enterUsernameAndPasswordAndClickLogin()">
+                <span>When Enter username and password and click login</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.siddharthtest.projects.orange.HRM.stepdefinitions.LoginSteps.clickLoginButton()">
-                <span>And click Login button</span>
+              <div class="step pass-bg" title="com.siddharthtest.stepDefinitions.DashboardStepDefs.user_is_logged_in()">
+                <span>Given User is logged in</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.siddharthtest.projects.orange.HRM.stepdefinitions.LoginSteps.userIsRedirectedToTheDashboardPage()">
-                <span>Then user is redirected to the Dashboard page</span>
+              <div class="step pass-bg" title="com.siddharthtest.stepDefinitions.DashboardStepDefs.dashboard_should_be_displayed()">
+                <span>Then Dashboard should be displayed</span>
       <div>
       </div>
               </div>
@@ -363,7 +321,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -372,12 +330,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@regression</p>
+<p class="name">@Dashboard</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
+<h4>@Dashboard</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -391,11 +349,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>06:20:03 AM</td>
+<td>04:58:44 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login success</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify dashboard page</a>
 <div class="">
-<span class="badge badge-default">Login Test CMS.Login success</span>
+<span class="badge badge-default">Dashboard Verification.Verify dashboard page</span>
 </div>
 </td>
 </tr>
@@ -403,33 +361,17 @@ eventsCount: 5,
 </table>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view author-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">AnhTester</p>
+<p class="name">@Smoke</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>AnhTester</h4>
+<h4>@Smoke</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -443,11 +385,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>06:20:03 AM</td>
+<td>04:58:44 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login success</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify dashboard page</a>
 <div class="">
-<span class="badge badge-default">Login Test CMS.Login success</span>
+<span class="badge badge-default">Dashboard Verification.Verify dashboard page</span>
 </div>
 </td>
 </tr>
@@ -455,33 +397,17 @@ eventsCount: 5,
 </table>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view device-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">Window_11</p>
+<p class="name">@Regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Window_11</h4>
+<h4>@Regression</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -495,11 +421,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>06:20:03 AM</td>
+<td>04:58:44 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login success</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify dashboard page</a>
 <div class="">
-<span class="badge badge-default">Login Test CMS.Login success</span>
+<span class="badge badge-default">Dashboard Verification.Verify dashboard page</span>
 </div>
 </td>
 </tr>
