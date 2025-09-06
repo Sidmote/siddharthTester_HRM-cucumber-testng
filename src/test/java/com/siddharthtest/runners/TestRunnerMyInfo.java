@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 //@Test
 @CucumberOptions(
-        features = "src/test/resources/features/MyInfo.feature",
+        features = "src/test/resources/featureFiles/MyInfo.feature",
         glue = {
                 "com.siddharthtest.stepDefinitions",
                 "com.siddharthtest.hooks"

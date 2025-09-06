@@ -16,6 +16,8 @@ public class PerformanceStepDefs {
 
     @When("User navigates to Performance module")
     public void user_navigates_to_performance() {
+    	WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(performancePage.pageTitle));
         performancePage.performanceMenu.click();
     }
 

@@ -16,6 +16,8 @@ public class RecruitmentStepDefs {
 
     @When("User navigates to Recruitment module")
     public void user_navigates_to_recruitment() {
+    	WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(recruitmentPage.pageTitle));
         recruitmentPage.recruitmentMenu.click();
     }
 

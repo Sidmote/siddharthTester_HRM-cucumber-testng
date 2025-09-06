@@ -54,7 +54,7 @@
 
         <!-- Suite XML path -->
         <!--<suite.feature>src/test/resources/suites/SuiteFeatureByPIM.xml</suite.feature>-->
-       <suite.feature.Dashboard>src/test/resources/suites/SuiteFeatureDashboard.xml</suite.feature.Dashboard>
+       <suite.feature.By.Tag>src/test/resources/suites/SuiteFeatureByTag.xml</suite.feature.By.Tag>
     
     </properties>
 
@@ -334,7 +334,7 @@
                         <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>${suite.feature.Dashboard}</suiteXmlFile>
+                                <suiteXmlFile>${suite.feature.By.Tag}</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -365,7 +365,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- Call Suite name global set up above -->
-                        <suiteXmlFile>${suite.feature.Dashboard}</suiteXmlFile>
+                        <suiteXmlFile>${suite.feature.By.Tag}</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>

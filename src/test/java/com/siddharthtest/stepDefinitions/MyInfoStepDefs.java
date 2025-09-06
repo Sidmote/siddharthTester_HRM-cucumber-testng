@@ -16,6 +16,8 @@ public class MyInfoStepDefs {
 
     @When("User navigates to My Info module")
     public void user_navigates_to_myinfo() {
+    	WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(myInfoPage.pageTitle));
         myInfoPage.myInfoMenu.click();
     }
 

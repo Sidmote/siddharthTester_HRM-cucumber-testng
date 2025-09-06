@@ -16,6 +16,8 @@ public class PIMStepDefs {
 
     @When("User navigates to PIM module")
     public void user_navigates_to_pim() {
+    	WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(pimPage.pageTitle));
         pimPage.pimMenu.click();
     }
 

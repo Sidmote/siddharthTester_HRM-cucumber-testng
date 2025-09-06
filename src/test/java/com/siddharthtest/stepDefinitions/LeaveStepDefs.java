@@ -16,6 +16,8 @@ public class LeaveStepDefs {
 
     @When("User navigates to Leave module")
     public void user_navigates_to_leave() {
+    	WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(leavePage.pageTitle));
         leavePage.leaveMenu.click();
     }
 
