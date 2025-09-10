@@ -67,15 +67,15 @@ public class Hooks {
         
         //Enable 69-77 when email want to send
 
-        EmailManager.sendEmail(count_totalTCs
-                , count_passedTCs
-                , count_failedTCs
-                , count_skippedTCs);
+        // EmailManager.sendEmail(count_totalTCs
+        //         , count_passedTCs
+        //         , count_failedTCs
+        //         , count_skippedTCs);
 
-        LogUtils.info("count_totalTCs: " + count_totalTCs);
-        LogUtils.info("count_passedTCs: " + count_passedTCs);
-        LogUtils.info("count_failedTCs: " + count_failedTCs);
-        LogUtils.info("count_skippedTCs: " + count_skippedTCs);
+        // LogUtils.info("count_totalTCs: " + count_totalTCs);
+        // LogUtils.info("count_passedTCs: " + count_passedTCs);
+        // LogUtils.info("count_failedTCs: " + count_failedTCs);
+        // LogUtils.info("count_skippedTCs: " + count_skippedTCs);
     }
 
     @Before
